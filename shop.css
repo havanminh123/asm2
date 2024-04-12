@@ -1,0 +1,156 @@
+/* Header Start */
+#top-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 10px 20px; /* Điều chỉnh khoảng cách giữa các phần tử trong top-header */
+    font-size: 12px;
+}
+
+#top-header p {
+    color: rgb(156, 154, 154);
+    display: inline-block;
+}
+
+#top-header a .fa-solid {
+    color: rgb(190, 135, 32);
+}
+
+#header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 20px; /* Điều chỉnh khoảng cách giữa các phần tử trong header */
+    background-color: rgba(240, 238, 238, 0.5);
+    z-index: 100;
+    position: sticky;
+    top: 0;
+    left: 0;
+}
+
+#header>a {
+    font-size: 24px;
+    font-weight: bold;
+    text-decoration: none;
+    color: black;
+}
+
+#navbar {
+    display: flex;
+    align-items: center;
+}
+
+#navbar li {
+    list-style: none;
+    margin-right: 20px; /* Điều chỉnh khoảng cách giữa các mục trong navbar */
+}
+
+#navbar li a {
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+}
+
+#banner img {
+    width: 100%;
+    height: 70%;
+    object-fit: cover; /* Đảm bảo ảnh sẽ tự căn chỉnh để vừa với kích thước của phần tử cha */
+}
+
+/* Định dạng sản phẩm */
+
+.product {
+    width: 40%; /* Đặt chiều rộng của sản phẩm */
+    margin: 3.5%; /* Tạo khoảng cách giữa các sản phẩm */
+    box-sizing: border-box; /* Đảm bảo không bị vượt khỏi kích thước của phần tử cha */
+    float: left; /* Hiển thị sản phẩm theo chiều ngang */
+}
+/* Đảm bảo rằng phần tử chứa sản phẩm sử dụng flexbox */
+.product {
+    width: 30%; /* Đặt chiều rộng của sản phẩm */
+    box-sizing: border-box; /* Đảm bảo không bị vượt khỏi kích thước của phần tử cha */
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Căn sản phẩm vào giữa */
+    margin: 10px; /* Tạo khoảng cách giữa các sản phẩm */
+}
+
+.product img {
+    width: 100%; /* Đặt chiều rộng của ảnh */
+    height: 400px; /* Đặt chiều cao của ảnh */
+    object-fit: cover; /* Đảm bảo ảnh sẽ tự căn chỉnh để vừa với kích thước của phần tử cha */
+    border-radius: 8px;
+}
+
+#product-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between; /* Căn sản phẩm lên trên */
+}
+
+
+
+/* Định dạng sản phẩm khi hover */
+.product:hover {
+    transform: scale(1.05); /* Phóng to sản phẩm khi hover */
+    transition: transform 0.3s ease; /* Hiệu ứng transition mượt mà */
+}
+
+.product .description {
+    text-align: center; /* Căn giữa nội dung mô tả */
+    padding: 10px 0; /* Tạo khoảng cách giữa nội dung mô tả và ảnh */
+}
+
+.product .price {
+    display: flex;
+    justify-content: space-between; /* Căn giữa giá sản phẩm và nút mua */
+    width: 50%; /* Đảm bảo giá và nút mua nằm trên cùng một dòng */
+}
+
+.product .price p {
+    font-size: 15px;
+    font-weight: 700;
+    color: #645e5e; /* Màu chữ cho giá sản phẩm */
+}
+
+
+
+
+
+.search-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .search-container form {
+    display: flex;
+    border: 1px solid #ccc;
+    border-radius: 25px;
+    overflow: hidden;
+  }
+  
+  .search-container input[type="text"] {
+    padding: 10px;
+    border: none;
+    outline: none;
+    width: 300px;
+  }
+  
+  .search-container button {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+  }
+  
+  .search-container button:hover {
+    background-color: #45a049;
+  }
+  
+  .fa-search {
+    font-size: 18px;
+  }
+  
+  
